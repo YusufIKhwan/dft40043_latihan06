@@ -14,16 +14,28 @@
     <tr>
         <td><label for="Namaanda">Nama Anda</label></td>
         <td>
-            <input type="text" name="Namaanda" id="Namaanda" size="30"required>
+            <input type="text" name="Namaanda" id="Namaanda" size="30"required placeholder="Nama Penuh" autofocus autocomplete="on">
         </td>
     </tr>
     <tr>
         <td><label for="Namakeluarga">Nama Keluarga</label></td>
-        <td><input type="text" name="Namakeluarga" id="Namakeluarga" value="Nama Keluarga" readonly></td>
+        <td><input type="text" name="Namakeluarga" id="Namakeluarga" value="Nama Keluarga" disabled></td>
     </tr>
     <tr>
         <td><label for="notelefon">No.Telefon</label></td>
-        <td><input type="text" name="notelefon" id="notelefon" minlength="10" maxlength="11"></td>
+        <td><input type="text" name="notelefon" id="notelefon" minlength="10" maxlength="11"required ></td>
+    </tr>
+    <tr>
+        <td>Negeri</td>
+        <td>
+            <input type="text" name="negeri" id="negeri" list="senarai">
+            <datalist id="senarai">
+                <option value="Penang">
+                    <option value="Johor"></option>
+                    <option value="Kedah"></option>
+
+            </datalist>
+        </td>
     </tr>
 </table>
 
